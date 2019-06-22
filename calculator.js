@@ -44,6 +44,14 @@
         return memory;
     }
 
+    var saveMemory = function(x){
+        return memory = total;
+    }
+
+    var clearMemory = function(x){
+        return memory = 0;
+    }
+
     return {
         load:load,
         getTotal:getTotal,
@@ -51,7 +59,9 @@
         subtract:subtract,
         multiply:multiply,
         divide:divide,
-        recallMemory:recallMemory
+        recallMemory:recallMemory,
+        saveMemory:saveMemory,
+        clearMemory:clearMemory
     }
 
  }
