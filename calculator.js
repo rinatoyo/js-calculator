@@ -17,6 +17,8 @@
         if(typeof x === 'number'){
             total = x;
             return total
+        }else{
+            throw error;
         }
     }
 
@@ -25,19 +27,36 @@
     }
 
     var add = function (x){
-        return total += x;
+        if(typeof x === 'number'){
+            return total += x;
+        }else{
+            throw error;
+        }
+        
     }
 
     var subtract = function (x){
-        return total -= x;
+        if(typeof x === 'number'){
+            return total -= x;
+        }else{
+            throw error;
+        }
     }
 
     var multiply = function (x){
-        return total *= x;
+        if(typeof x === 'number'){
+            return total *= x;
+        }else{
+            throw error;
+        }
     }
 
     var divide = function (x){
-        return total /= x;
+        if(typeof x === 'number'){
+            return total /= x;
+        }else{
+            throw error;
+        }
     }
 
     var recallMemory = function(x){
